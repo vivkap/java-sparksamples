@@ -53,7 +53,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-            <plugin>
+       <!--     <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
@@ -61,12 +61,12 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.vivek.spark.WordCountApp</mainClass>
+                            <mainClass>com.vivek.spark.ReadCsvApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
-<!--
+
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-dependency-plugin</artifactId>
