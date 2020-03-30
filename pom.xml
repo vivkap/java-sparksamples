@@ -53,7 +53,7 @@
                     <target>1.8</target>
                 </configuration>
             </plugin>
-       <!--     <plugin>
+         <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-jar-plugin</artifactId>
                 <configuration>
@@ -61,31 +61,30 @@
                         <manifest>
                             <addClasspath>true</addClasspath>
                             <classpathPrefix>lib/</classpathPrefix>
-                            <mainClass>com.vivek.spark.ReadCsvApp</mainClass>
+                            <mainClass>com.vivek.spark.WordCountApp</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
             </plugin>
 
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-dependency-plugin</artifactId>
-                <executions>
-                    <execution>
-                        <id>copy</id>
-                        <phase>install</phase>
-                        <goals>
-                            <goal>copy-dependencies</goal>
-                        </goals>
-                        <configuration>
-                            <outputDirectory>${project.build.directory}/lib</outputDirectory>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
--->
+                    <plugin>
+                     <groupId>org.apache.maven.plugins</groupId>
+                     <artifactId>maven-dependency-plugin</artifactId>
+                     <executions>
+                         <execution>
+                             <id>copy</id>
+                             <phase>install</phase>
+                             <goals>
+                                 <goal>copy-dependencies</goal>
+                             </goals>
+                             <configuration>
+                                 <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                             </configuration>
+                         </execution>
+                     </executions>
+                 </plugin>
         </plugins>
-        <finalName>word-count</finalName>
+        <finalName>spark-samples</finalName>
 
     </build>
 

@@ -11,7 +11,7 @@ import scala.Tuple2;
 
 import java.util.Arrays;
 
-public class WordCountApp {
+public class WordCount {
     private static final FlatMapFunction<String, String> WORDS_EXTRACTOR =
             new FlatMapFunction<String, String>() {
                 @Override
