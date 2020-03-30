@@ -42,7 +42,7 @@ public class WordCount {
             System.exit(0);
         }
 
-        SparkConf conf = new SparkConf().setAppName("org.sparkexample.WordCount").setMaster("local");
+        SparkConf conf = new SparkConf().setAppName("WordCount");
         JavaSparkContext context = new JavaSparkContext(conf);
 
         JavaRDD<String> file = context.textFile(args[0]);
