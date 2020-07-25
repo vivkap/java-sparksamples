@@ -1,2 +1,2 @@
 # sparksamples
-Repository for Spark Sample programs
+Repository for Java Spark Sample programs
